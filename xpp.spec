@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://download.sourceforge.net/cups/%{name}-%{version}.tar.gz
+# Source0-md5:	fc2649b2db29a3ae4bec6842ccd8e268
 URL:		http://www.phy.uni-bayreuth.de/till/xpp/
 BuildRequires:	fltk-devel >= 1.0.10
 BuildRequires:	cups-devel >= 1.1.9
