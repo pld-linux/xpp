@@ -1,15 +1,15 @@
 Summary:	X interface for cups
 Summary(pl):	Interfejs dla cups pod X-y
 Name:		xpp
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/cups/%{name}-%{version}.tar.gz
-# Source0-md5:	fc2649b2db29a3ae4bec6842ccd8e268
+# Source0-md5:	abf4634edf3ff15c6f4db436d68fa835
 Patch0:		%{name}-acam.patch
 Patch1:		%{name}-c++.patch
-URL:		http://www.phy.uni-bayreuth.de/till/xpp/
+URL:		http://cups.sourceforge.net/xpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cups-devel >= 1.1.9
