@@ -1,35 +1,34 @@
 Summary:	X interface for cups
-Summary(pl):	interfejs dla cups pod X'y
+Summary(pl):	Interfejs dla cups pod X-y
 Name:		xpp
 Version:	1.0
 Release:	1
 License:	GPL
-Group:		X11/Narzedzia
-Group(pl):	X11/Utilitys
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
 Source0:	http://download.sourceforge.net/cups/%{name}-%{version}.tar.gz
 URL:		http://www.phy.uni-bayreuth.de/till/xpp/
 BuildRequires:	fltk-devel >= 1.0.10
 BuildRequires:	cups-devel >= 1.1.9
-Requires:	automake   <=1.4p5-1
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
 %description
-X interface for cups
+X interface for cups.
 
 %description -l pl
-interfejs dla cups pod X'y
+Interfejs dla cups pod X-y.
 
 %prep
 %setup -q
 
 %build
-
-rm missing
-CFLAGS="%{rpmcflags}"
-
+rm -f missing
 automake -a -c
+CFLAGS="%{rpmcflags}"
 %configure2_13 \
 	%{?debug:--enable-more-warnings} \
 	%{!?debug:--disable-more-warnings} 
