@@ -5,8 +5,6 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(pl):	X11/Aplikacje
 Source0:	http://download.sourceforge.net/cups/%{name}-%{version}.tar.gz
 URL:		http://www.phy.uni-bayreuth.de/till/xpp/
 BuildRequires:	fltk-devel >= 1.0.10
