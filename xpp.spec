@@ -25,7 +25,7 @@ Interfejs dla cups pod X-y.
 
 %build
 rm -f missing
-automake -a -c -f
+%{__automake}
 CFLAGS="%{rpmcflags}"
 %configure2_13 \
 	%{?debug:--enable-more-warnings} \
