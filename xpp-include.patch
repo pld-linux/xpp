@@ -1,0 +1,11 @@
+--- xpp-1.5/xppmain.cxx~	2004-12-01 02:28:01.000000000 +0100
++++ xpp-1.5/xppmain.cxx	2004-12-23 13:19:38.401589032 +0100
+@@ -32,7 +32,7 @@
+  */
+ 
+ #include "mainwindow.h"
+-#include <Fl/Fl_Shared_Image.h>
++#include <FL/Fl_Shared_Image.h>
+ 
+ /*
+  * 'main()' - Do all what xpp should do
