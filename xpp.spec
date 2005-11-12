@@ -2,13 +2,12 @@ Summary:	X interface for cups
 Summary(pl):	Interfejs dla cups pod X-y
 Name:		xpp
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/cups/%{name}-%{version}.tar.gz
 # Source0-md5:	775fd69c464515da0c3295d04d0c747f
 Patch0:		%{name}-include.patch
-#Patch1:		%{name}-c++.patch
 URL:		http://cups.sourceforge.net/xpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -26,14 +25,10 @@ Interfejs dla cups pod X-y.
 %prep
 %setup -q
 %patch0 -p1
-#%patch1 -p1
 
 %build
-#%{__aclocal}
-#%{__autoconf}
-#%{__automake}
+CUPSD="/usr/sbin/cupsd"; export CUPSD
 %configure2_13 \
-	CUPSD="/usr/sbin/cupsd" \
 	%{?debug:--enable-more-warnings} \
 	%{!?debug:--disable-more-warnings}
 
