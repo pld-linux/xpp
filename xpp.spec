@@ -1,5 +1,5 @@
 Summary:	X interface for cups
-Summary(pl):	Interfejs dla cups pod X-y
+Summary(pl.UTF-8):   Interfejs dla cups pod X-y
 Name:		xpp
 Version:	1.5
 Release:	2
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X interface for cups.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs dla cups pod X-y.
 
 %prep
