@@ -1,5 +1,5 @@
 Summary:	X interface for cups
-Summary(pl.UTF-8):   Interfejs dla cups pod X-y
+Summary(pl.UTF-8):	Interfejs dla cups pod X-y
 Name:		xpp
 Version:	1.5
 Release:	2
